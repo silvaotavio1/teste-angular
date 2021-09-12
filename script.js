@@ -2,14 +2,14 @@
 angular.
   module('copyExample', []).
   controller('ExampleController', ['$scope', function($scope) {
-    $scope.indicacao = {};
+    $scope.submit = {};
 
     $scope.reset = function() {
       $scope.indicacao = {}
     };
 
     $scope.update = function(user) {
-      $scope.indicacao = angular.copy(indicacao);
+      $scope.submit = angular.copy(indicacao);
     };
 
     //$scope.reset();
