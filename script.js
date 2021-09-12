@@ -24,11 +24,11 @@
           "email_indicado": "otaviosilva96@gmail.com"
         });
 
-        console.log($raw)
+        console.log(raw)
 
         raw = angular.copy(indicacao);
 
-        console.log($raw)
+        console.log(raw)
 
         var requestOptions = {
           method: 'POST',
