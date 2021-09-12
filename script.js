@@ -30,7 +30,7 @@
         $scope.response = 'loading...'
 
         fetch("https://www.quadrosdaroberta.com.br/laravelphp/api/indicacao/", requestOptions)
-          .then(response => response.text())
+          // .then(response => response.text())
           .then(result => {
             console.log(result);
             $scope.response = result
