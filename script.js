@@ -27,6 +27,8 @@
           redirect: 'follow'
         };
 
+        $scope.response = 'loading...'
+
         fetch("https://www.quadrosdaroberta.com.br/laravelphp/api/indicacao/", requestOptions)
           .then(response => response.text())
           .then(result => {
@@ -37,7 +39,6 @@
             $scope.response = error
           });
 
-        $scope.response = 'loading...'
 
       };
 
