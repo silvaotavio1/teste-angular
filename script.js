@@ -12,5 +12,5 @@ angular.
       $scope.submit = angular.copy(indicacao);
     };
 
-    $scope.reset();
+    //$scope.reset();
   }]);
