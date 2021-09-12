@@ -10,7 +10,7 @@
         // Example with 1 argument
         testeAlerta()
         $scope.indicacao = {};
-        document.getElementById('pre-response').innerHTML = '{}'
+        document.getElementById('pre-response').innerHTML = 'response = {}'
       };
 
       $scope.deletar = function () {
