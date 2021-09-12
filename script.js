@@ -14,24 +14,28 @@
 
       $scope.update = function (indicacao) {
 
+        var myHeaders = new Headers();
+        myHeaders.append("Authorization", "Bearer 9f10a9cbc46a4faebcd8e904d1c24d25");
+        myHeaders.append("Content-Type", "application/json");
+
         var raw = JSON.stringify(angular.copy(indicacao));
 
-        var settings = {
-          "url": "https://www.quadrosdaroberta.com.br/laravelphp/api/indicacao/",
-          "method": "POST",
-          "timeout": 0,
-          "headers": {
-            "Authorization": "Bearer 9f10a9cbc46a4faebcd8e904d1c24d25",
-            "Content-Type": "application/json"
-          },
-          "data": raw,
+        var requestOptions = {
+          method: 'POST',
+          headers: myHeaders,
+          body: raw,
+          redirect: 'follow'
         };
-        
-        $.ajax(settings).done(function (response) {
-          console.log(response);
-        });
 
-        $scope.response = response;
+        fetch("https://www.quadrosdaroberta.com.br/laravelphp/api/indicacao/", requestOptions)
+          .then(response => response.text())
+          .then(result => function () {
+            console.log(result);
+            $scope.response = result
+          }).catch(error => console.log('error', error));
+
+          $scope.response = 'loading...'
+
       };
 
       //$scope.reset();
