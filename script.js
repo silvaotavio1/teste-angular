@@ -8,7 +8,8 @@ angular.
 
     $scope.reset = function() {
       // Example with 1 argument
-      $scope.submit = angular.copy($scope.indicacao);
+      angular.copy({}, $scope.indicacao);
+      $scope.indicacao = angular.copy($scope.indicacao);
     };
 
     $scope.update = function(indicacao) {
