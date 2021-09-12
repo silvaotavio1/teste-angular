@@ -13,7 +13,7 @@ angular.
 
     $scope.update = function(indicacao) {
       // Example with 2 arguments
-      angular.copy(indicacao, $scope.indicacao);
+      angular.copy(indicacao, $scope.submit);
     };
 
     $scope.reset();
