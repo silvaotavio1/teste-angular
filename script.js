@@ -30,13 +30,13 @@
         $scope.response = 'loading...'
 
         fetch("https://www.quadrosdaroberta.com.br/laravelphp/api/indicacao/", requestOptions)
-          // .then(response => response.text())
+          .then(response => response.text())
           .then(result => {
             console.log(result);
-            $scope.response = angular.copy(result)
+            $scope.response = JSON.stringify(result)
           }).catch(error => {
             console.log('error', error)
-            $scope.response = angular.copy(error)
+            $scope.response = SON.stringify(error)
           });
 
 
