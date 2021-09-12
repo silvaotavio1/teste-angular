@@ -42,10 +42,10 @@
 
         console.log('teste')
         $scope.response = JSON.parse(resp)
-        $scope.reset();
+        // $scope.reset();
 
       };
 
-      //$scope.reset();
+      $scope.reset();
     }]);
 })(window.angular);
