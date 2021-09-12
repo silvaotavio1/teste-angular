@@ -32,7 +32,10 @@
           .then(result => function () {
             console.log(result);
             $scope.response = result
-          }).catch($scope.response = result);
+          }).catch(result => function () {
+            console.log(result);
+            $scope.response = result
+          })
 
           $scope.response = 'loading...'
 
