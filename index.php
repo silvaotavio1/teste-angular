@@ -16,15 +16,15 @@
 <body ng-app="copyExample">
   <div ng-controller="ExampleController">
     <form novalidate class="simple-form">
-      <label>CPF Indica: <input type="text" ng-model="user.cpf_indica" /></label><br><br>
-      <label>CPF Indicado: <input type="text" ng-model="user.cpf_indicado" /></label><br><br>
-      <label>Email Indicado: <input type="text" ng-model="user.email_indicado" /></label><br><br>
+      <label>CPF Indica: <input type="text" ng-model="indicacao.cpf_indica" /></label><br><br>
+      <label>CPF Indicado: <input type="text" ng-model="indicacao.cpf_indicado" /></label><br><br>
+      <label>Email Indicado: <input type="text" ng-model="indicacao.email_indicado" /></label><br><br>
 
       <button ng-click="reset()">Limpar</button>
-      <button ng-click="update(user)">Salvar</button>
+      <button ng-click="update(indicacao)">Salvar</button>
     </form>
-    <pre>form = {{user | json}}</pre>
-    <pre>leader = {{leader | json}}</pre>
+    <pre>form = {{indicacao | json}}</pre>
+    <pre>submit = {{submit | json}}</pre>
   </div>
 </body>
 

@@ -2,17 +2,14 @@
 angular.
   module('copyExample', []).
   controller('ExampleController', ['$scope', function($scope) {
-    $scope.leader = {};
+    $scope.submit = {};
 
     $scope.reset = function() {
-      // Example with 1 argument
-      // $scope.user = angular.copy($scope.leader);
-      $scope.user = {}
+      $scope.indicacao = {}
     };
 
     $scope.update = function(user) {
-      // Example with 2 arguments
-      angular.copy(user, $scope.leader);
+      $scope.submit = angular.copy(indicacao);
     };
 
     $scope.reset();
