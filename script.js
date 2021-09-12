@@ -14,7 +14,7 @@
 
       $scope.update = function (indicacao) {
 
-        raw = JSON.stringify(angular.copy(indicacao));
+        var raw = JSON.stringify(angular.copy(indicacao));
 
         var settings = {
           "url": "https://www.quadrosdaroberta.com.br/laravelphp/api/indicacao/",
