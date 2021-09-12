@@ -27,7 +27,7 @@
           redirect: 'follow'
         };
 
-        $scope.response = 'loading...'
+        // $scope.response = 'loading...'
         let resp = ''
 
         await fetch("https://www.quadrosdaroberta.com.br/laravelphp/api/indicacao/", requestOptions)
