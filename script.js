@@ -11,9 +11,9 @@ angular.
       $scope.submit = angular.copy($scope.indicacao);
     };
 
-    $scope.update = function(submit) {
+    $scope.update = function(indicacao) {
       // Example with 2 arguments
-      angular.copy(submit, $scope.indicacao);
+      angular.copy(indicacao, $scope.indicacao);
     };
 
     $scope.reset();
