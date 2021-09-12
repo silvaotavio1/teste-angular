@@ -29,10 +29,10 @@
 
         fetch("https://www.quadrosdaroberta.com.br/laravelphp/api/indicacao/", requestOptions)
           .then(response => response.text())
-          .then(result => function () {
+          .then(result => {
             console.log(result);
             $scope.response = result
-          }).catch(error => function () {
+          }).catch(error => {
             console.log('error', error)
             $scope.response = error
           });
