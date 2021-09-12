@@ -33,10 +33,10 @@
           .then(response => response.text())
           .then(result => {
             console.log(result);
-            $scope.response = JSON.stringify(result)
+            $scope.response = JSON.parse(result)
           }).catch(error => {
             console.log('error', error)
-            $scope.response = SON.stringify(error)
+            $scope.response = JSON.stringify(error)
           });
 
 
