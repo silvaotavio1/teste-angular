@@ -38,7 +38,7 @@
         document.getElementById('pre-response').innerHTML = 'response = Loading...';
       };
 
-      $scope.deletar = function () {
+      $scope.avancar = function () {
         var codindicacao = prompt("Atenção, insira o codigo da indicação que deseja avançar o status: ", "");
         
         var myHeaders = new Headers();
