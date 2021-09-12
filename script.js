@@ -14,8 +14,6 @@
 
       $scope.update = function (indicacao) {
 
-        console.log(raw)
-
         raw = JSON.stringify(angular.copy(indicacao));
 
         var settings = {
