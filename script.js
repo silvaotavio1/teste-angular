@@ -26,7 +26,7 @@
 
         console.log(raw)
 
-        raw = angular.copy(indicacao);
+        raw = JSON.stringify(angular.copy(indicacao));
 
         console.log(raw)
 
