@@ -23,7 +23,7 @@
       <button ng-click="reset()">Limpar</button>
       <button ng-click="update(indicacao)">Salvar</button>
     </form>
-    <pre>form = {{indicacao | json}}</pre>
+    <pre>indicacao = {{indicacao | json}}</pre>
     <pre>submit = {{submit | json}}</pre>
   </div>
 </body>
