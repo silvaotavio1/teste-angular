@@ -38,6 +38,32 @@
         document.getElementById('pre-response').innerHTML = 'response = Loading...';
       };
 
+      $scope.deletar = function () {
+        var codindicacao = prompt("Atenção, insira o codigo da indicação que deseja avançar o status: ", "");
+        
+        var myHeaders = new Headers();
+        myHeaders.append("Authorization", "Bearer 9f10a9cbc46a4faebcd8e904d1c24d25");
+        myHeaders.append("Content-Type", "application/json");
+
+        var requestOptions = {
+          method: 'POST',
+          headers: myHeaders,
+          redirect: 'follow'
+        };
+
+        fetch("https://www.quadrosdaroberta.com.br/laravelphp/api/avancastatus/" + codindicacao, requestOptions)
+          .then(response => response.text())
+          .then(result => {
+            console.log(result);
+            document.getElementById('pre-response').innerHTML = 'response = ' + JSON.stringify(JSON.parse(result), null, 2);
+          }).catch(error => {
+            console.log('error', error)
+            document.getElementById('pre-response').innerHTML = 'response = error'
+          });
+
+        document.getElementById('pre-response').innerHTML = 'response = Loading...';
+      };
+
       $scope.listar = function () {
 
         var myHeaders = new Headers();
