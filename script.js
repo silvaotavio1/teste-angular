@@ -31,7 +31,6 @@
           .then(response => response.text())
           .then(result => {
             console.log(result);
-            resp = result
             $scope.response = JSON.parse(result)
             window.angular
           }).catch(error => {
