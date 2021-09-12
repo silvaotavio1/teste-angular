@@ -31,13 +31,12 @@
           .then(response => response.text())
           .then(result => {
             console.log(result);
-            $scope.response = JSON.parse(result)
             document.getElementById('pre-response').innerHTML = 'response = ' + JSON.stringify(JSON.parse(result), null, 2);
           }).catch(error => {
             console.log('error', error)
           });
 
-        $scope.response = 'loading...'
+          document.getElementById('pre-response').innerHTML = 'response = Loading...';
       };
 
       $scope.reset();
