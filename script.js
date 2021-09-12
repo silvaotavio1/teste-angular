@@ -12,7 +12,7 @@
         $scope.response = {};
       };
 
-      $scope.update = async function (indicacao) {
+      $scope.update = function (indicacao) {
 
         var myHeaders = new Headers();
         myHeaders.append("Authorization", "Bearer 9f10a9cbc46a4faebcd8e904d1c24d25");
@@ -27,23 +27,18 @@
           redirect: 'follow'
         };
 
-        // $scope.response = 'loading...'
-        let resp = ''
-
-        await fetch("https://www.quadrosdaroberta.com.br/laravelphp/api/indicacao/", requestOptions)
+        fetch("https://www.quadrosdaroberta.com.br/laravelphp/api/indicacao/", requestOptions)
           .then(response => response.text())
           .then(result => {
             console.log(result);
             resp = result
+            $scope.response = JSON.parse(result)
+            window.angular
           }).catch(error => {
             console.log('error', error)
-            resp = error
           });
 
-        console.log('teste')
-        $scope.response = JSON.parse(resp)
-        // $scope.reset();
-
+        $scope.response = 'loading...'
       };
 
       $scope.reset();
