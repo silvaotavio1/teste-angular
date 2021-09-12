@@ -32,6 +32,7 @@
           .then(result => {
             console.log(result);
             $scope.response = JSON.parse(result)
+            document.getElementById('pre-response').innerHTML += JSON.parse(result);
           }).catch(error => {
             console.log('error', error)
           });
