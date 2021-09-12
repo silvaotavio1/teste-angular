@@ -6,7 +6,8 @@ angular.
 
     $scope.reset = function() {
       // Example with 1 argument
-      $scope.user = angular.copy($scope.leader);
+      // $scope.user = angular.copy($scope.leader);
+      $scope.user = {}
     };
 
     $scope.update = function(user) {
