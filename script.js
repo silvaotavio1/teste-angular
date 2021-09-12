@@ -12,7 +12,7 @@
         $scope.response = {};
       };
 
-      $scope.update = function (indicacao) {
+      $scope.update = async function (indicacao) {
 
         var myHeaders = new Headers();
         myHeaders.append("Authorization", "Bearer 9f10a9cbc46a4faebcd8e904d1c24d25");
@@ -39,7 +39,7 @@
             $scope.response = JSON.stringify(error)
           });
 
-          console.log('teste')
+        console.log('teste')
 
 
       };
