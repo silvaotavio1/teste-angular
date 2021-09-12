@@ -33,7 +33,7 @@
           console.log(response);
         });
 
-        $scope.response = angular.copy(indicacao);
+        $scope.response = response;
       };
 
       //$scope.reset();
