@@ -9,7 +9,7 @@
       $scope.reset = function () {
         // Example with 1 argument
         $scope.indicacao = {};
-        $scope.response = {};
+        document.getElementById('pre-response').innerHTML = '{}'
       };
 
       $scope.update = function (indicacao) {
