@@ -8,13 +8,13 @@ angular.
 
     $scope.reset = function() {
       // Example with 1 argument
-      angular.copy({}, $scope.indicacao);
-      $scope.indicacao = angular.copy($scope.indicacao);
+      $scope.indicacao = {};
     };
 
     $scope.update = function(indicacao) {
       // Example with 2 arguments
-      angular.copy(indicacao, $scope.submit);
+      $scope.submit = angular.copy(indicacao);
+      
     };
 
     //$scope.reset();
