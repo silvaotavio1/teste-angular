@@ -1,19 +1,21 @@
+(function(angular) {
+  'use strict';
 // Module: copyExample
 angular.
   module('copyExample', []).
   controller('ExampleController', ['$scope', function($scope) {
-    $scope.submit = {};
+    $scope.indicacao = {};
 
     $scope.reset = function() {
       // Example with 1 argument
-      // $scope.user = angular.copy($scope.leader);
-      $scope.indicacao = {}
+      $scope.submit = angular.copy($scope.indicacao);
     };
 
-    $scope.update = function(user) {
+    $scope.update = function(submit) {
       // Example with 2 arguments
-      angular.copy(indicacao, $scope.submit);
+      angular.copy(submit, $scope.indicacao);
     };
 
     $scope.reset();
   }]);
+})(window.angular);
