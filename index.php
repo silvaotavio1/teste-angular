@@ -24,7 +24,7 @@
       <button ng-click="update(indicacao)">Salvar</button>
     </form>
     <pre>indicacao = {{indicacao | json}}</pre>
-    <pre>submit = {{submit | json}}</pre>
+    <pre>response = {{response | json}}</pre>
   </div>
 </body>
 
