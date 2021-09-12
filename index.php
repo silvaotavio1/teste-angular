@@ -21,7 +21,10 @@
       <label>Email Indicado: <input type="text" ng-model="indicacao.email_indicado" /></label><br><br>
 
       <button ng-click="reset()">Limpar</button>
-      <button ng-click="update(indicacao)">Salvar</button>
+      <button ng-click="update(indicacao)">Inserir</button>
+      <button ng-click="deletar()">Deletar</button>
+      <button ng-click="listar()">Listar Todos</button>
+      <button ng-click="avancar()">Avançar Status</button>
     </form>
     <pre>indicacao = {{indicacao | json}}</pre>
     <pre id='pre-response'>response = {{response | json}}</pre>
