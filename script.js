@@ -29,7 +29,7 @@
 
         $scope.response = 'loading...'
 
-        fetch("https://www.quadrosdaroberta.com.br/laravelphp/api/indicacao/", requestOptions)
+        await fetch("https://www.quadrosdaroberta.com.br/laravelphp/api/indicacao/", requestOptions)
           .then(response => response.text())
           .then(result => {
             console.log(result);
@@ -38,6 +38,8 @@
             console.log('error', error)
             $scope.response = JSON.stringify(error)
           });
+
+          console.log('teste')
 
 
       };
