@@ -7,6 +7,7 @@
   <title>Angular JS - Teste - Otávio</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+  <script src='angular.js'></script>
   <script src='script.js'></script>
 </head>
 
