@@ -33,7 +33,7 @@
           .then(response => response.text())
           .then(result => {
             console.log(result);
-            $scope.response = angular.copy(response)
+            $scope.response = result
           }).catch(error => {
             console.log('error', error)
             $scope.response = angular.copy(error)
