@@ -32,6 +32,7 @@
             document.getElementById('pre-response').innerHTML = 'response = ' + JSON.stringify(JSON.parse(result), null, 2);
           }).catch(error => {
             console.log('error', error)
+            document.getElementById('pre-response').innerHTML = 'response = error'
           });
 
         document.getElementById('pre-response').innerHTML = 'response = Loading...';
@@ -56,6 +57,7 @@
             document.getElementById('pre-response').innerHTML = 'response = ' + JSON.stringify(JSON.parse(result), null, 2);
           }).catch(error => {
             console.log('error', error)
+            document.getElementById('pre-response').innerHTML = 'response = error'
           });
 
         document.getElementById('pre-response').innerHTML = 'response = Loading...';
@@ -83,6 +85,7 @@
             document.getElementById('pre-response').innerHTML = 'response = ' + JSON.stringify(JSON.parse(result), null, 2);
           }).catch(error => {
             console.log('error', error)
+            document.getElementById('pre-response').innerHTML = 'response = error'
           });
 
         document.getElementById('pre-response').innerHTML = 'response = Loading...';
