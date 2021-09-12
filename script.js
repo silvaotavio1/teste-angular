@@ -42,7 +42,7 @@
 
         console.log('teste')
         $scope.response = JSON.parse(resp)
-        $scope.reload();
+        $scope.reset();
 
       };
 
