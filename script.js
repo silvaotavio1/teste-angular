@@ -17,6 +17,6 @@ angular.
       angular.copy(indicacao, $scope.submit);
     };
 
-    $scope.reset();
+    //$scope.reset();
   }]);
 })(window.angular);
