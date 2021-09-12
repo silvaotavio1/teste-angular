@@ -28,19 +28,20 @@
         };
 
         $scope.response = 'loading...'
+        let resp = ''
 
         await fetch("https://www.quadrosdaroberta.com.br/laravelphp/api/indicacao/", requestOptions)
           .then(response => response.text())
           .then(result => {
             console.log(result);
-            $scope.response = JSON.parse(result)
+            resp = result
           }).catch(error => {
             console.log('error', error)
-            $scope.response = JSON.stringify(error)
+            resp = error
           });
 
         console.log('teste')
-
+        $scope.response = JSON.parse(resp)
 
       };
 
