@@ -8,6 +8,7 @@
 
       $scope.reset = function () {
         // Example with 1 argument
+        testeAlerta()
         $scope.indicacao = {};
         document.getElementById('pre-response').innerHTML = '{}'
       };
@@ -120,3 +121,10 @@
       $scope.reset();
     }]);
 })(window.angular);
+
+
+
+function testeAlerta()
+{
+  alert('oi');
+}
